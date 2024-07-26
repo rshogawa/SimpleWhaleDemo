@@ -1,4 +1,4 @@
-name: CI to Docker Hub
+name: docker ci ${{ github.actor }} 
 
 on:
   push:
