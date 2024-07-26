@@ -39,4 +39,4 @@ jobs:
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
       - name: a
-        run: echo github action = ${{ github.actor }} github token= ${{ secrets.GITHUB_TOKEN }}
+        run: echo github action = ${{ github.actor }} github token= ${{ secrets.GITHUB_TOKEN }} repository owner = ${{ github.repository_owner }}
