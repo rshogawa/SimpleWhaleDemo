@@ -38,3 +38,5 @@ jobs:
           cache-to: type=local,dest=/tmp/.buildx-cache
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
+      - name: a
+        run: echo github action = ${{ github.actor }} github token= ${{ secrets.GITHUB_TOKEN }}
